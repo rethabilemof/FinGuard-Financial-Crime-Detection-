@@ -1,17 +1,19 @@
 # FinGuard - Financial Crime Detection System
 
-A cloud-based intelligent system for detecting suspicious financial transactions using Azure Functions and advanced pattern recognition algorithms.
+A proof-of-concept financial transaction monitoring system designed to identify patterns commonly associated with money laundering, structuring and other financial crimes.
 
 ## 🎯 Overview
 
-FinGuard is a real-time transaction monitoring system designed to identify potential money laundering, structuring, and other financial crimes. Built with Azure serverless architecture, it combines regulatory compliance requirements (FICA) with behavioral analysis to flag high-risk transactions.
+FinGuard demonstrates how financial crime detection logic can be designed by translating Financial Intelligence Centre Act (FICA) compliance requirements and criminal behaviour pattern into a rule-based detection engine. The system analyses transaction and assigns risk score, highlighting potential suspicious activity.
 
-**Live Demo:** Run locally at `http://localhost:7071/api/TestTransaction`
+The project currently runs locally as an Azure Functions API and serves as a prototype for understanding how such logic could be implemented in banking or fintech environmrnts.
+
+**Run locally at** `http://localhost:7071/api/TestTransaction`
 
 ## 🚀 Key Features
 
 ### Detection Capabilities
-- ✅ **FICA Compliance Monitoring** - Automatically flags transactions exceeding R10,000 reporting threshold
+- ✅ **FICA Compliance Monitoring** - Flags transactions exceeding R10,000 reporting threshold
 - ✅ **Structuring Detection** - Identifies attempts to evade reporting by splitting transactions (R9,999, R9,998, etc.)
 - ✅ **Round Number Analysis** - Flags suspiciously perfect amounts that suggest planning
 - ✅ **Temporal Pattern Detection** - Identifies unusual timing (midnight transactions, weekend activity)
@@ -26,7 +28,7 @@ FinGuard is a real-time transaction monitoring system designed to identify poten
 
 ## 🛠️ Technology Stack
 
-- **Platform:** Azure Functions (Serverless)
+- **Platform:** Azure Functions (running locally)
 - **Runtime:** Node.js 20
 - **Language:** JavaScript
 - **Architecture:** Event-driven, RESTful API
@@ -38,7 +40,6 @@ FinGuard is a real-time transaction monitoring system designed to identify poten
 - Node.js 20.x or higher
 - Azure Functions Core Tools 4.x
 - Git
-- Azure account (optional for cloud deployment)
 
 ## 🔧 Installation & Setup
 
@@ -159,14 +160,13 @@ This project combines expertise from multiple domains:
 
 - **Policing:** Understanding of criminal behavior patterns and investigation procedures
 - **Finance & Taxation Law:** Knowledge of FICA (Financial Intelligence Centre Act) compliance requirements
-- **Cloud Computing:** Azure Functions architecture and serverless deployment (AZ-204, AZ-400 certified)
+- **Programming:** Rule-based logic and API design
 
 ### Real-World Applications
-- Banks and financial institutions (FICA compliance)
-- Fintech companies (fraud prevention)
-- Accounting firms (client risk assessment)
-- Law enforcement (money laundering investigation)
-- Tax authorities (tax evasion detection)
+- Banks and financial institutions
+- Fintech companies 
+- Accounting and audit firms 
+- Law enforcement
 
 ## 🚧 Roadmap
 
@@ -177,7 +177,7 @@ This project combines expertise from multiple domains:
 - [x] RESTful API
 
 ### Phase 2: Data Persistence (In Progress)
-- [ ] Database integration (Azure SQL / SQLite)
+- [ ] Database integration (SQLite/local storage)
 - [ ] Transaction history storage
 - [ ] Query capabilities
 
@@ -189,7 +189,7 @@ This project combines expertise from multiple domains:
 
 ### Phase 4: User Interface (Planned)
 - [ ] Web dashboard
-- [ ] Data visualization (charts, graphs)
+- [ ] Data visualization 
 - [ ] Compliance reporting
 - [ ] Alert notifications
 
