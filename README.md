@@ -45,8 +45,7 @@ The project currently runs locally as an Azure Functions API and serves as a pro
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/rethabilemof/FinGuard.git
-   cd FinGuard
+   https://github.com/rethabilemof/FinGuard-Financial-Crime-Detection-.git
    ```
 
 2. **Install dependencies**
