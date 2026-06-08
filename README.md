@@ -2,7 +2,7 @@
 
 A proof-of-concept financial transaction monitoring system designed to identify patterns commonly associated with money laundering, structuring and other financial crimes.
 
-## 🎯 Overview
+## Overview
 
 FinGuard demonstrates how financial crime detection logic can be designed by translating Financial Intelligence Centre Act (FICA) compliance requirements and criminal behaviour pattern into a rule-based detection engine. The system analyses transaction and assigns risk score, highlighting potential suspicious activity.
 
@@ -10,7 +10,7 @@ The project currently runs locally as an Azure Functions API and serves as a pro
 
 **Run locally at** `http://localhost:7071/api/TestTransaction`
 
-## 🚀 Key Features
+## Key Features
 
 ### Detection Capabilities
 - ✅ **FICA Compliance Monitoring** - Flags transactions exceeding R10,000 reporting threshold
@@ -21,12 +21,12 @@ The project currently runs locally as an Azure Functions API and serves as a pro
 - ✅ **Micro-Transaction Flagging** - Detects potential account validation attempts
 
 ### Advanced Analytics
-- 📊 **Risk Scoring System** - Assigns 0-100 risk scores based on multiple factors
-- 🎚️ **Risk Level Classification** - Categorizes as LOW, MEDIUM, HIGH, or CRITICAL
-- 📋 **Multi-Alert Tracking** - Single transaction can trigger multiple rules
-- 💡 **Actionable Recommendations** - Provides clear guidance for compliance officers
+- **Risk Scoring System** - Assigns 0-100 risk scores based on multiple factors
+- **Risk Level Classification** - Categorizes as LOW, MEDIUM, HIGH, or CRITICAL
+- **Multi-Alert Tracking** - Single transaction can trigger multiple rules
+- **Actionable Recommendations** - Provides clear guidance for compliance officers
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Platform:** Azure Functions (running locally)
 - **Runtime:** Node.js 20
@@ -35,13 +35,13 @@ The project currently runs locally as an Azure Functions API and serves as a pro
 - **Development:** VS Code, Azure Functions Core Tools
 - **Version Control:** Git & GitHub
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Node.js 20.x or higher
 - Azure Functions Core Tools 4.x
 - Git
 
-## 🔧 Installation & Setup
+## Installation & Setup
 
 1. **Clone the repository**
    ```bash
@@ -63,7 +63,7 @@ The project currently runs locally as an Azure Functions API and serves as a pro
    http://localhost:7071/api/TestTransaction
    ```
 
-## 📖 Usage Examples
+## Usage Examples
 
 ### Basic Transaction Analysis
 ```
@@ -93,12 +93,11 @@ GET http://localhost:7071/api/TestTransaction?name=John&amount=5000
   ],
   "recommendation": "RECOMMEND: Transaction may proceed normally"
 }
-```
+
 
 ### High-Risk Transaction
-```
 GET http://localhost:7071/api/TestTransaction?name=Sarah&amount=50000
-```
+
 
 **Response:**
 ```json
@@ -135,7 +134,7 @@ GET http://localhost:7071/api/TestTransaction?name=Mike&amount=9999
 GET http://localhost:7071/api/TestTransaction?name=Bob&amount=100000&timestamp=2026-02-02T02:00:00Z
 ```
 
-## 🔍 Detection Rules
+##  Detection Rules
 
 | Rule | Trigger Condition | Risk Points | Severity |
 |------|------------------|-------------|----------|
@@ -153,7 +152,7 @@ GET http://localhost:7071/api/TestTransaction?name=Bob&amount=100000&timestamp=2
 - **HIGH:** 50-69 points
 - **CRITICAL:** 70-100 points
 
-## 🎓 Project Background
+##  Project Background
 
 This project combines expertise from multiple domains:
 
@@ -167,7 +166,7 @@ This project combines expertise from multiple domains:
 - Accounting and audit firms 
 - Law enforcement
 
-## 🚧 Roadmap
+##  Roadmap
 
 ### Phase 1: Core Detection ✅ (Complete)
 - [x] Basic transaction analysis
@@ -192,7 +191,7 @@ This project combines expertise from multiple domains:
 - [ ] Compliance reporting
 - [ ] Alert notifications
 
-## 📊 API Reference
+## API Reference
 
 ### Endpoint
 ```
@@ -235,18 +234,18 @@ GET/POST /api/TestTransaction
 }
 ```
 
-## 🤝 Contributing
+## Contributing
 
 This is a portfolio project, but suggestions and feedback are welcome! Feel free to:
 - Open issues for bugs or feature requests
 - Submit pull requests with improvements
 - Share ideas for additional detection rules
 
-## 📄 License
+##  License
 
 This project is open source and available under the MIT License.
 
-## 👤 Author
+## Author
 
 **Rethabile Mofokeng**
 
@@ -255,7 +254,7 @@ Combining expertise in policing, financial law, and cloud computing to build int
 - GitHub: [@rethabilemof](https://github.com/rethabilemof)
 - LinkedIn: [Rethabile Mofokeng](https://www.linkedin.com/in/rethabile-mofokeng-5230991b2)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - South African Financial Intelligence Centre (FIC) for FICA regulatory framework
 - Azure Functions documentation and community
@@ -263,4 +262,4 @@ Combining expertise in policing, financial law, and cloud computing to build int
 
 ---
 
-**⚠️ Disclaimer:** This is an educational project demonstrating technical capabilities in financial crime detection. It should not be used as the sole mechanism for regulatory compliance without proper legal and compliance review.
+** Disclaimer:** This is an educational project demonstrating technical capabilities in financial crime detection. It should not be used as the sole mechanism for regulatory compliance without proper legal and compliance review.
